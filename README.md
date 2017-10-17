@@ -122,7 +122,7 @@ Project based on [Telegram Bot Pagination][github-lartie-tbp] by [lartie][github
 [inline-keyboard-pagination-link]: https://github.com/php-telegram-bot/inline-keyboard-pagination "Telegram Bot Inline Keyboard Pagination"
 
 [github-tgbot-ikp]: https://github.com/php-telegram-bot/inline-keyboard-pagination "PHP Telegram Bot Inline Keyboard Pagination on GitHub"
-[packagist-tgbot-ikp]: https://packagist.org/packages/php-telegram-bot/inline-keyboard-pagination "PHP Telegram Bot Inline Keyboard Pagination on Packagist"
+[packagist-tgbot-ikp]: https://packagist.org/packages/mehrdadkhoddami/php-telegram-bot-inline-keyboard-pagination "Customized PHP Telegram Bot Inline Keyboard Pagination on Packagist"
 [license]: https://github.com/php-telegram-bot/inline-keyboard-pagination/blob/master/LICENSE "PHP Telegram Bot Inline Keyboard Pagination license"
 
 [code-quality-badge]: https://img.shields.io/scrutinizer/g/php-telegram-bot/inline-keyboard-pagination.svg
