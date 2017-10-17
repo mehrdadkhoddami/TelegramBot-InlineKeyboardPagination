@@ -1,16 +1,22 @@
 {
-    "name": "mehrdadkhoddami/php-telegram-bot/inline-keyboard-pagination",
+    "name": "mehrdadkhoddami/php-telegram-bot-inline-keyboard-pagination",
     "type": "library",
     "description": "Customized PHP Telegram Bot InlineKeyboard Pagination",
     "keywords": ["telegram", "bot", "inline", "keyboard", "pagination", "callback", "query"],
     "license": "MIT",
-    "homepage": "https://github.com/php-telegram-bot/inline-keyboard-pagination",
+    "homepage": "https://github.com/mehrdadkhoddami/TelegramBot-InlineKeyboardPagination",
     "support": {
         "issues": "https://github.com/php-telegram-bot/inline-keyboard-pagination/issues",
         "source": "https://github.com/php-telegram-bot/inline-keyboard-pagination"
     },
     "authors": [
         {
+            "name": "Mehrdad Khoddami",
+            "email": "khoddami.me@gmail.com",
+            "homepage": "https://github.com/mehrdadkhoddami",
+            "role": "developer"
+        },
+		{
             "name": "Armando Lüscher",
             "email": "armando@noplanman.ch",
             "homepage": "https://noplanman.ch",
@@ -21,12 +27,6 @@
             "email": "log.wil.log@gmail.com",
             "homepage": "https://github.com/lartie",
             "role": "Original developer"
-        },
-        {
-            "name": "Mehrdad Khoddami",
-            "email": "khoddami.me@gmail.com",
-            "homepage": "https://github.com/mehrdadkhoddami",
-            "role": "developer"
         }
     ],
     "require": {
