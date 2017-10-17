@@ -1,6 +1,6 @@
 <?php
 
-namespace MehrdadKhoddami\TelegramBot-InlineKeyboardPagination\Exceptions;
+namespace MehrdadKhoddami\TelegramBotInlineKeyboardPagination\Exceptions;
 
 use Exception;
 
@@ -8,7 +8,7 @@ use Exception;
  * Class InlineKeyboardPaginationException
  * Based on https://github.com/php-telegram-bot/inline-keyboard-pagination
  *
- * @package MehrdadKhoddami\TelegramBot-InlineKeyboardPagination
+ * @package MehrdadKhoddami\TelegramBotInlineKeyboardPagination
  */
 final class InlineKeyboardPaginationException extends Exception
 {

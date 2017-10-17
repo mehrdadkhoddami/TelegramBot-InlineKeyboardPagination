@@ -1,14 +1,14 @@
 <?php
 
-namespace MehrdadKhoddami\TelegramBot-InlineKeyboardPagination;
+namespace MehrdadKhoddami\TelegramBotInlineKeyboardPagination;
 
-use MehrdadKhoddami\TelegramBot-InlineKeyboardPagination\Exceptions\InlineKeyboardPaginationException;
+use MehrdadKhoddami\TelegramBotInlineKeyboardPagination\Exceptions\InlineKeyboardPaginationException;
 
 /**
  * Class InlineKeyboardPagination
  * Based on https://github.com/php-telegram-bot/inline-keyboard-pagination
  *
- * @package MehrdadKhoddami\TelegramBot-InlineKeyboardPagination
+ * @package MehrdadKhoddami\TelegramBotInlineKeyboardPagination
  */
 class InlineKeyboardPagination implements InlineKeyboardPaginator
 {

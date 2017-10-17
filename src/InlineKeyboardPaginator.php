@@ -1,12 +1,12 @@
 <?php
 
-namespace MehrdadKhoddami\TelegramBot-InlineKeyboardPagination;
+namespace MehrdadKhoddami\TelegramBotInlineKeyboardPagination;
 
 /**
  * Interface InlineKeyboardPaginator
  * Based on https://github.com/php-telegram-bot/inline-keyboard-pagination
  *
- * @package MehrdadKhoddami\TelegramBot-InlineKeyboardPagination
+ * @package MehrdadKhoddami\TelegramBotInlineKeyboardPagination
  */
 interface InlineKeyboardPaginator
 {
