@@ -39,12 +39,12 @@
     },
     "autoload": {
         "psr-4": {
-            "TelegramBot\\InlineKeyboardPagination\\": "src"
+            "MehrdadKhoddami\\TelegramBotInlineKeyboardPagination\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "TelegramBot\\InlineKeyboardPagination\\Tests\\": "tests"
+            "MehrdadKhoddami\\TelegramBotInlineKeyboardPagination\\Tests\\": "tests"
         }
     },
     "scripts": {
