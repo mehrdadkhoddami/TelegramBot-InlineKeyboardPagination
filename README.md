@@ -8,6 +8,7 @@
 [![Total Downloads][total-downloads-badge]][packagist-tgbot-ikp]
 [![License][license-badge]][license]
 
+- [About](#about)
 - [Installation](#installation)
     - [Composer](#composer)
 - [Usage](#usage)
@@ -15,6 +16,9 @@
     - [How To Use](#how-to-use)
 - [Code Quality](#code-quality)
 - [License](#license)
+
+## About
+A package based on [Telegram Bot Inline Keyboard Pagination][inline-keyboard-pagination-link]
 
 ## Installation
 
@@ -115,6 +119,7 @@ The MIT License (MIT). Please see [License File][license] for more information.
 
 Project based on [Telegram Bot Pagination][github-lartie-tbp] by [lartie][github-lartie].
 
+[inline-keyboard-pagination-link]: https://github.com/php-telegram-bot/inline-keyboard-pagination "Telegram Bot Inline Keyboard Pagination"
 
 [github-tgbot-ikp]: https://github.com/php-telegram-bot/inline-keyboard-pagination "PHP Telegram Bot Inline Keyboard Pagination on GitHub"
 [packagist-tgbot-ikp]: https://packagist.org/packages/php-telegram-bot/inline-keyboard-pagination "PHP Telegram Bot Inline Keyboard Pagination on Packagist"
