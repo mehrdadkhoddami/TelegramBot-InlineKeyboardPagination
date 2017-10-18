@@ -50,15 +50,15 @@ class InlineKeyboardPagination implements InlineKeyboardPaginator
     /**
      * @var string
      */
-    protected $callback_data_format = 'command={COMMAND}&oldPage={OLD_PAGE}&newPage={NEW_PAGE}';
+    protected $callback_data_format = 'cmd={COMMAND}&op={OLD_PAGE}&np={NEW_PAGE}';
 
     /**
      * @var array
      */
     protected $query_string = [
-        'command'   =>  '{COMMAND}',
-        'oldPage'   =>  '{OLD_PAGE}',
-        'newPage'   =>  '{NEW_PAGE}',
+        'cmd'   =>  '{COMMAND}',
+        'op'   =>  '{OLD_PAGE}',
+        'np'   =>  '{NEW_PAGE}',
     ];
 
     /**
@@ -452,9 +452,9 @@ class InlineKeyboardPagination implements InlineKeyboardPaginator
      */
     protected function generateCallbackData(int $page): string
     {
-        $this->query_string['command']   =   $this->command;
-        $this->query_string['oldPage']   =   $this->selected_page;
-        $this->query_string['newPage']   =   $page;
+        $this->query_string['cmd']   =   $this->command;
+        $this->query_string['op']   =   $this->selected_page;
+        $this->query_string['np']   =   $page;
 
         return http_build_query($this->query_string);
     }
