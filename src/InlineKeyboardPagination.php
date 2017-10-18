@@ -55,6 +55,15 @@ class InlineKeyboardPagination implements InlineKeyboardPaginator
     /**
      * @var array
      */
+    protected $query_string = [
+        'command'   =>  '{COMMAND}',
+        'oldPage'   =>  '{OLD_PAGE}',
+        'newPage'   =>  '{NEW_PAGE}',
+    ];
+
+    /**
+     * @var array
+     */
     protected $labels = [
         'default'  => '%d',
         'first'    => '« %d',
@@ -418,6 +427,23 @@ class InlineKeyboardPagination implements InlineKeyboardPaginator
     }
 
     /**
+     * Add new variable(s) to Query String of callback
+     *
+     * @param array $var
+     *
+     * @return bool
+     */
+    public function addQueryStringVariable(array $var): bool
+    {
+        if (!is_array($var)) {
+            return false;
+        }
+        $this->query_string = array_merge($var, $this->query_string);
+
+        return true;
+    }
+
+    /**
      * Generate the callback data for the passed page.
      *
      * @param int $page
@@ -426,11 +452,11 @@ class InlineKeyboardPagination implements InlineKeyboardPaginator
      */
     protected function generateCallbackData(int $page): string
     {
-        return str_replace(
-            ['{COMMAND}', '{OLD_PAGE}', '{NEW_PAGE}'],
-            [$this->command, $this->selected_page, $page],
-            $this->callback_data_format
-        );
+        $this->query_string['command']   =   $this->command;
+        $this->query_string['oldPage']   =   $this->selected_page;
+        $this->query_string['newPage']   =   $page;
+
+        return http_build_query($this->query_string);
     }
 
     /**
